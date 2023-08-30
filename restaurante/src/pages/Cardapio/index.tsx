@@ -19,11 +19,12 @@ export default function Cardapio(){
 </div>
            </header>
 
-           <section>
-               <h3>Cardápio</h3>
+           <section className={styles.cardapio}>
+               <h3 className={styles.cardapio__titulo}>Cardápio</h3>
+               
+           <Buscador busca={busca} setBusca={setBusca}></Buscador>
            </section>
 
-           <Buscador busca={busca} setBusca={setBusca}></Buscador>
        </main>
     );
 }

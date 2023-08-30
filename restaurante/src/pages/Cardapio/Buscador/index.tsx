@@ -8,7 +8,7 @@ interface Props{
 
 export default function Buscador({busca,setBusca}: Props){
     return(
-        <div>
+        <div className={styles.buscador}>
             <input 
             value={busca}
             onChange={(evento) => setBusca(evento.target.value)}
